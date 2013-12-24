@@ -1,0 +1,59 @@
+body
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    cursor:default;
+}
+
+audio {display: none;}
+
+.game
+{
+	position: absolute;
+	background-color: #2F4F4F;
+	border: 3px solid black;
+	width: 30%;
+	height: 50%;
+	left: 35%;
+	top: 20%;
+}
+
+.square
+{
+	position: relative;
+	width: 20%;
+	height: 20%;
+	display: inline-block;
+}
+
+.active {pointer-events: none;}
+.clicked:active {box-shadow: 3px 3px 3px white;}
+
+#red {background-color: red;}
+#blue {background-color: blue;}
+#green {background-color: green;}
+#yellow {background-color: yellow;}
+
+#red, #blue
+{
+	top: 25%;
+}
+
+#green, #yellow
+{
+	top: 40%;
+}
+
+#red, #yellow
+{
+	left: 20%;
+}
+
+#blue, #green
+{
+	left: 40%;
+}
+
+.squareL {box-shadow: 3px 3px 3px white;}
